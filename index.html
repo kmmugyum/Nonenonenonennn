@@ -10,74 +10,175 @@
 </head>
 <body class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
 
-  <!-- Header -->
-  <header class="hero-section">
-    <div class="hero-img">
-      <img src="https://placehold.co/150x150/2C3E50/FDFDFD?text=Your+Photo" alt="김무겸 프로필 사진" class="profile-img" />
+<!-- Header -->
+<header class="hero-section flex flex-col md:flex-row items-center justify-center bg-primary text-accent rounded-xl shadow-xl p-8 mb-12 text-center md:text-left">
+  <div class="hero-img mb-6 md:mb-0 md:mr-8">
+    <img src="https://placehold.co/150x150/2C3E50/FDFDFD?text=Your+Photo" alt="김무겸 프로필 사진" class="w-36 h-36 rounded-full border-4 border-secondary shadow-lg object-cover" />
+  </div>
+  <div class="hero-text space-y-3">
+    <h1 class="text-4xl sm:text-5xl font-extrabold">
+      김무겸 <span class="text-secondary">(Kim MuGyum)</span>
+    </h1>
+    <p class="text-xl sm:text-2xl font-semibold italic text-accent/80">
+      Deep Learning Researcher & Aspiring Full-Stack Developer
+    </p>
+    <div class="social-links flex flex-wrap justify-center md:justify-start gap-3 mt-4">
+      <a href="https://www.instagram.com/nonenonenonenonnn" target="_blank" class="bg-accent text-secondary px-5 py-2 rounded-full font-medium hover:bg-opacity-90 transition shadow-md">Instagram</a>
+      <a href="https://small0753.tistory.com" target="_blank" class="bg-accent text-secondary px-5 py-2 rounded-full font-medium hover:bg-opacity-90 transition shadow-md">Tistory</a>
+      <a href="mailto:small0753@daum.net" class="bg-accent text-secondary px-5 py-2 rounded-full font-medium hover:bg-opacity-90 transition shadow-md">Email</a>
+      <a href="https://www.linkedin.com/in/nonenonenonennn/" target="_blank" class="bg-accent text-secondary px-5 py-2 rounded-full font-medium hover:bg-opacity-90 transition shadow-md">LinkedIn</a>
     </div>
-    <div class="hero-text">
-      <h1 class="hero-name">김무겸 <span class="text-secondary">(Kim MuGyum)</span></h1>
-      <p class="hero-role">딥러닝 연구자 + 풀스택 개발자 지망생</p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/nonenonenonenonnn" target="_blank">Instagram</a>
-        <a href="https://small0753.tistory.com" target="_blank">블로그</a>
-        <a href="mailto:small0753@daum.net">이메일</a>
-        <a href="https://www.linkedin.com/in/nonenonenonennn/" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-  </header>
-
+  </div>
+</header>
   <!-- Main -->
   <main class="main-content">
+<section class="section about bg-secondary p-8 rounded-xl shadow-xl border border-primary mb-12">
+  <h2 class="text-3xl font-bold text-accent mb-6 border-b-2 border-primary pb-2">About Me</h2>
+  <div class="space-y-4 text-lg leading-relaxed text-accent">
+    <p>
+      저는 현재 <strong class="font-semibold">충남대학교 인공지능학과</strong>에 휴학 중이며, 
+      <strong class="font-semibold">공군 군악대</strong>에서 복무 중입니다.
+    </p>
+    <p>
+      <strong class="font-semibold">인공지능 기술을 활용해 사용자에게 실질적 가치를 제공하는 서비스</strong>를 만드는 것이 저의 목표이며, 
+      이를 통해 사람들의 삶에 긍정적인 영향을 주고자 합니다.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+      <div>
+        <h3 class="text-xl font-semibold text-accent mb-2 border-b border-primary">🎯 관심 분야</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>컴퓨터 비전 (CV)</li>
+          <li>스타트업 경영</li>
+          <li>사용자 중심 서비스 설계</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-accent mb-2 border-b border-primary">🚀 목표</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>실질적으로 도움이 되는 AI 서비스 구현</li>
+          <li>현실 문제를 해결하는 기술 개발</li>
+          <li>기술과 비즈니스의 융합 추구</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="section about">
-      <h2>About Me</h2>
-      <p>충남대 인공지능학과 휴학 중, 공군 군악대 복무 중입니다. AI를 통해 사용자에게 의미 있는 서비스를 제공하는 것이 제 목표입니다.</p>
-      <ul>
-        <li><strong>관심:</strong> CV, 스타트업, 경영</li>
-        <li><strong>목표:</strong> 의미 있는 AI 서비스 구현</li>
+<section class="section skills bg-secondary p-8 rounded-xl shadow-xl border border-primary mb-12">
+  <h2 class="text-3xl font-bold text-accent mb-6 border-b-2 border-primary pb-2">Skills</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-accent">
+    <!-- Languages -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">💻 Languages</h3>
+      <ul class="flex flex-wrap gap-3">
+        <li>
+          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+        </li>
+        <li>
+          <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
+        </li>
+        <li>
+          <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+        </li>
+        <li>
+          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+        </li>
       </ul>
-    </section>
+    </div>
 
-    <section class="section skills">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <div>
-          <h3>Languages</h3>
-          <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>Java</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Frameworks & Tools</h3>
-          <ul>
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
-            <li>Firebase</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <!-- Frameworks & Tools -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">🛠️ Frameworks & Tools</h3>
+      <ul class="flex flex-wrap gap-3">
+        <li>
+          <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+        </li>
+        <li>
+          <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+        </li>
+        <li>
+          <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <section class="section projects">
-      <h2>Projects</h2>
-      <div class="project-box">
-        <h3>Satellite Image Segmentation</h3>
-        <p>경작지 면적 분석을 통해 B2C AI 서비스를 제공하는 세그멘테이션 프로젝트입니다.</p>
-        <a href="https://github.com/kmmugyum/Satellite_Image_Segmentation" target="_blank">GitHub 보기</a>
-      </div>
-    </section>
+    <section class="section projects bg-secondary p-8 rounded-xl shadow-xl border border-primary mb-12">
+  <h2 class="text-3xl font-bold text-accent mb-6 border-b-2 border-primary pb-2">Projects</h2>
 
-    <section class="section contact">
-      <h2>Contact</h2>
-      <p><strong>이메일:</strong> <a href="mailto:small0753@daum.net">small0753@daum.net</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/kmmugyum" target="_blank">github.com/kmmugyum</a></p>
-      <p><strong>블로그:</strong> <a href="https://small0753.tistory.com" target="_blank">small0753.tistory.com</a></p>
-    </section>
+  <div class="flex flex-col lg:flex-row gap-8 items-center">
+    <!-- 📷 팜플렛 또는 프로젝트 이미지 -->
+    <div class="w-full lg:w-1/2">
+      <img src="https://placehold.co/400x600?text=Project+Pamphlet+or+Preview" alt="Satellite Image Segmentation Preview" class="w-full h-auto rounded-lg shadow-lg border border-primary">
+    </div>
 
+    <!-- 📘 프로젝트 설명 -->
+    <div class="w-full lg:w-1/2 space-y-4">
+      <h3 class="text-2xl font-bold text-accent">🌍 Satellite Image Segmentation</h3>
+      <p class="text-lg leading-relaxed">
+        <strong class="text-accent">인공지능 기반 이미지 세그멘테이션</strong>을 통해 위성 이미지 상의 <strong class="text-accent">경작지 면적을 자동으로 분석</strong>하고,
+        이를 기반으로 <strong class="text-accent">기업에게 B2C AI 서비스를 제공</strong>하는 프로젝트입니다.
+      </p>
+      <ul class="list-disc list-inside text-lg">
+        <li><strong>분야:</strong> 위성 이미지 분석 · 스마트 농업</li>
+        <li><strong>기술:</strong> Deep Learning, Segmentation, Computer Vision</li>
+      </ul>
+      <a href="https://github.com/kmmugyum/Satellite_Image_Segmentation" target="_blank"
+         class="inline-block mt-4 bg-accent text-secondary px-5 py-2 rounded-full text-md font-semibold hover:bg-opacity-90 transition duration-300 shadow-md">
+        🔗 GitHub에서 보기
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section contact bg-primary p-8 rounded-xl shadow-xl text-accent mt-12">
+  <h2 class="text-3xl font-bold text-accent mb-6 border-b-2 border-accent pb-2">📬 Contact</h2>
+
+  <div class="space-y-4 text-lg">
+    <p class="flex items-center">
+      <img src="https://img.icons8.com/ios-filled/24/2c3e50/new-post.png" alt="email" class="mr-3">
+      <span class="font-bold">이메일:</span>
+      <a href="mailto:small0753@daum.net" class="ml-2 hover:underline text-accent">
+        small0753@daum.net
+      </a>
+    </p>
+    <p class="flex items-center">
+      <img src="https://img.icons8.com/ios-glyphs/24/2c3e50/github.png" alt="GitHub" class="mr-3">
+      <span class="font-bold">GitHub:</span>
+      <a href="https://github.com/kmmugyum" target="_blank" class="ml-2 hover:underline text-accent">
+        github.com/kmmugyum
+      </a>
+    </p>
+    <p class="flex items-center">
+      <img src="https://img.icons8.com/ios-filled/24/2c3e50/blogger.png" alt="Blog" class="mr-3">
+      <span class="font-bold">블로그:</span>
+      <a href="https://small0753.tistory.com" target="_blank" class="ml-2 hover:underline text-accent">
+        small0753.tistory.com
+      </a>
+    </p>
+    <p class="flex items-center">
+      <img src="https://img.icons8.com/ios-filled/24/2c3e50/instagram-new.png" alt="Instagram" class="mr-3">
+      <span class="font-bold">Instagram:</span>
+      <a href="https://www.instagram.com/nonenonenonenonnn" target="_blank" class="ml-2 hover:underline text-accent">
+        @nonenonenonenonnn
+      </a>
+    </p>
+    <p class="flex items-center">
+      <img src="https://img.icons8.com/ios-filled/24/2c3e50/linkedin.png" alt="LinkedIn" class="mr-3">
+      <span class="font-bold">LinkedIn:</span>
+      <a href="https://www.linkedin.com/in/nonenonenonennn/" target="_blank" class="ml-2 hover:underline text-accent">
+        linkedin.com/in/nonenonenonennn
+      </a>
+    </p>
+    <p class="flex items-center">
+      <img src="https://img.icons8.com/ios-filled/24/2c3e50/phone.png" alt="Phone" class="mr-3">
+      <span class="font-bold">전화번호:</span>
+      <span class="ml-2">010-7938-1804</span>
+    </p>
+  </div>
+</section>
   </main>
 
   <!-- Footer -->

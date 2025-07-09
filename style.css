@@ -80,9 +80,22 @@ body {
 
 .skill-grid {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
+  border-top: 2px dashed var(--color-primary);
+  padding-top: 1.5rem;
+}
+
+.skill-grid > div {
+  border-bottom: 1px dashed var(--color-primary);
+  padding-bottom: 1rem;
+}
+
+.skill-grid h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
 }
 
 .project-box {
