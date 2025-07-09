@@ -12,7 +12,7 @@ body {
 
 .hero-section {
   background-color: var(--color-primary);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 2rem;
   max-width: 960px;
   width: 100%;
@@ -46,13 +46,14 @@ body {
   background-color: var(--color-accent);
   color: var(--color-secondary);
   padding: 0.5rem 1rem;
-  border-radius: 9999px;
+  border-radius: 0.375rem; /* ✔️ 예: rounded-md 수준의 각진 모서리 */
   margin: 0.25rem;
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
   transition: opacity 0.3s;
 }
+
 
 .social-links a:hover {
   opacity: 0.85;
